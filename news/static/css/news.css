@@ -1,0 +1,14 @@
+.type{
+font-family:"calibri","Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-weight: bold;
+text-transform: uppercase;
+
+}
+
+.item{
+font-family:"calibri",
+color : #1A237E;
+font-size: smaller;
+text-transform:lowercase;
+}
+

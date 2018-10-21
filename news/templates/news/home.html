@@ -1,0 +1,49 @@
+
+
+{% extends 'news/base.html' %}
+{% block content %}
+<div class = 'container'>
+{% for item in news %}
+
+	<table class = 'table borderless table-hover'>
+		<tr>
+			{% if item.source_name %}
+			<td><div class = 'type'>SOURCE</div></td>
+			<td><div class = 'item'>{{item.source_name}}</div></td>
+			{% endif %}
+		</tr>
+		<tr>
+			{% if item.author%}
+			<td><div class = 'type'>AUTHOR</div></td>
+			<td><div class = 'item'>{{item.author}}</div></td>
+			{% endif %}
+		</tr>
+		<tr>
+			{% if item.published_date %}
+			<td><div class = 'type'>PUBLISHED_DATE</div></td>
+			<td><div class = 'item'>{{item.published_date}}</div></td>
+			{% endif %}
+		</tr>
+		<tr>
+			{% if item.title %}
+			<td><div class = 'type'>TITLE</div></td>
+			<td><div class = 'item'>{{item.title}}</div></td>
+			{% endif %}
+		</tr>
+		<tr>
+			{% if item.description %}
+			<td><div class = 'type'>DESCRIPTION</div></td>
+			<td><div class = 'item'>{{item.description}}</div></td>
+			{% endif %}
+		</tr>
+		<tr>
+			<td><div class = 'type'>URL</div></td>
+			<td><div class = 'item'><a href = {{item.url}}>{{item.url}}</div></a></td>
+		</tr>	
+
+	</table>
+
+<br><br>
+{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'news/base.html' %}
+
+{% block content %}
+
+<h2><center>Refreshing this page inserts data into DB</center></h2>
+
+<div class = 'container'>
+<table class ='table'>
+	<tr>
+		<td>Click the button for <strong>HTML</strong> view</td>
+		<td><a class="btn btn-success" href="{% url 'hometemplate' %}">HTML</a></td>
+	</tr>
+	<tr>
+		<td>Click the button for <strong>JSON</strong> view</td>
+		<td><a class="btn btn-success" href="{%url 'api_view'%}">JSON</a></td>
+	</tr>
+</table>
+ </div>
+{% endblock %}
