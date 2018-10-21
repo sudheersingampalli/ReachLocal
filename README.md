@@ -14,7 +14,6 @@ pip
 virtualenv
 Django==2.0.3
 djangorestframework
-newsapi-python
 ```
 
 ### Installing
@@ -51,7 +50,7 @@ pip install djangorestframework
 
 ## Migrating Data from newsapi.org to our local database
 
-The below details will you migrate the data from newsapi.org to our local database(sqlLite)
+The below details will help you migrate the data from newsapi.org to our local database(sqlLite)
 
 #### Step1
 
@@ -75,28 +74,15 @@ Access the URL http://127.0.0.1:8000/migratedata/ <br>
 Each time we change the value of q= and load the above URL, new data will be migrated into our local database.
 
 ## Accessing Endpoints
-The end points can be accessed from the URL http://127.0.0.1:8000/migratedata/.
+The end points can be accessed from the URL http://127.0.0.1:8000/migratedata/ on clicking either HTML or JSON buttons.
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+## References
+newsapi/articles - https://newsapi.org/docs/endpoints/sources <br>
+djangorestframework - https://www.django-rest-framework.org/ <br>
+class base views - https://docs.djangoproject.com/en/2.1/topics/class-based-views/ <br>
+basic structuring of whole code - https://tutorial.djangogirls.org/en/ <br>
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Sudheer Singampalli** - (https://github.com/sudheersingampalli/)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
