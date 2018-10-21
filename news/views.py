@@ -24,9 +24,7 @@ class ListNewsView(generics.ListAPIView):
 
 
 class MigrateData(TemplateView):
-	def post(self,request):
-		pass
-
+	
 	def get(self,request):
 		url = 'https://newsapi.org/v2/everything?apiKey=af92652e76b745a6bde8dd2fc5739bfd&q=Halloween'
 		raw_data = requests.get(url).json()
