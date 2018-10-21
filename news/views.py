@@ -5,8 +5,6 @@ from django.db import IntegrityError
 from rest_framework import generics
 from .serializers import NewsSerializer
 from django.views.generic import TemplateView,ListView
-# from rest_framework.renderers import JSONRenderer
-# Create your views here.
 
 class HomeView(ListView):
 
