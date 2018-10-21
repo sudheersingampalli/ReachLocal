@@ -1,7 +1,6 @@
 from django.shortcuts import render
 import requests
 from .models import News
-import traceback
 from django.db import IntegrityError
 from rest_framework import generics
 from .serializers import NewsSerializer
@@ -26,7 +25,7 @@ class ListNewsView(generics.ListAPIView):
 class MigrateData(TemplateView):
 	
 	def get(self,request):
-		url = 'https://newsapi.org/v2/everything?apiKey=af92652e76b745a6bde8dd2fc5739bfd&q=Halloween'
+		url = 'https://newsapi.org/v2/everything?apiKey=&q=Halloween'
 		raw_data = requests.get(url).json()
 		articles = raw_data['articles']
 		print(len(articles))
