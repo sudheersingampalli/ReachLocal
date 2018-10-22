@@ -16,7 +16,7 @@ class HomeView(ListView):
 
 class ListNewsView(generics.ListAPIView):
 	
-    queryset = News.objects.all().order_by('-published_date')[:50]
+    queryset = News.objects.all().order_by('-published_date')[:100]
     serializer_class = NewsSerializer	
 
 
@@ -39,7 +39,7 @@ class MigrateData(TemplateView):
 										content = articles[item]['content'])
 				print('done..')
 
-			except IntegrityError as ie:
+			except IntegrityError as ie:# same news appeared so ignore
 				print('unique constraint error..')
 
 			except Exception as ex:
