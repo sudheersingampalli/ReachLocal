@@ -23,7 +23,7 @@ class ListNewsView(generics.ListAPIView):
 class MigrateData(TemplateView):
 	
 	def get(self,request):
-		url = 'https://newsapi.org/v2/everything?apiKey=&q=Halloween'
+		url = 'https://newsapi.org/v2/everything?apiKey=&q=Django interview'
 		raw_data = requests.get(url).json()
 		articles = raw_data['articles']
 		print(len(articles))
