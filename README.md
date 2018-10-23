@@ -3,6 +3,8 @@ ReachLocal's Django Project
 
 ## Getting Started
 
+This Project will help you to fetch data from "articles" endpoint of newsapi.org API and dump into our local database.
+Then we can access the data either in HTML format or JSON format by hitting the corresponding endpoint.
 These instructions will get you a copy of the project up and running on your local machine for development purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
